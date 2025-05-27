@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <!-- Pot -->
+    <path d="M30,85 L70,85 L65,65 L35,65 L30,85 Z" fill="#A1887F"></path> <!-- Brown Pot -->
+    <!-- Stem -->
+    <rect fill="#4CAF50" x="47" y="35" width="6" height="35" rx="3"></rect> <!-- Green Stem -->
+    <!-- Leaves -->
+    <ellipse fill="#66BB6A" cx="40" cy="50" rx="15" ry="8" transform="rotate(-30 40 50)"></ellipse>
+    <ellipse fill="#66BB6A" cx="60" cy="50" rx="15" ry="8" transform="rotate(30 60 50)"></ellipse>
+    <ellipse fill="#81C784" cx="50" cy="35" rx="12" ry="7"></ellipse>
+    <!-- Flower (Optional, simple) -->
+    <circle fill="#FFEB3B" cx="50" cy="25" r="8"></circle> <!-- Yellow center -->
+    <circle fill="#FFC107" cx="50" cy="25" r="4"></circle> <!-- Darker yellow inner -->
+  </g>
+</svg>

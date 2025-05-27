@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+    <!-- Book Cover -->
+    <path d="M15,10 C10,10 10,15 10,20 L10,80 C10,85 10,90 15,90 L85,90 C90,90 90,85 90,80 L90,20 C90,15 90,10 85,10 L15,10 Z" fill="#4A90E2"></path>
+    <!-- Pages -->
+    <rect fill="#FFFFFF" x="15" y="15" width="33" height="70"></rect>
+    <rect fill="#F8F8F8" x="52" y="15" width="33" height="70"></rect>
+    <!-- Center Line -->
+    <line x1="50" y1="12" x2="50" y2="88" stroke="#3367A8" stroke-width="2"></line>
+    <!-- Page Lines (optional detail) -->
+    <line x1="20" y1="25" x2="45" y2="25" stroke="#B0BEC5" stroke-width="1.5"></line>
+    <line x1="20" y1="35" x2="45" y2="35" stroke="#B0BEC5" stroke-width="1.5"></line>
+    <line x1="20" y1="45" x2="45" y2="45" stroke="#B0BEC5" stroke-width="1.5"></line>
+    <line x1="55" y1="25" x2="80" y2="25" stroke="#DAE4ED" stroke-width="1.5"></line>
+    <line x1="55" y1="35" x2="80" y2="35" stroke="#DAE4ED" stroke-width="1.5"></line>
+    <line x1="55" y1="45" x2="80" y2="45" stroke="#DAE4ED" stroke-width="1.5"></line>
+  </g>
+</svg>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Year 3 Learning Fun!</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&family=Nunito:wght@400;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="container">
+    <header>
+      <h1>Year 3 Learning Adventures!</h1>
+      <div class="progress-area">
+        <h2>Your Progress:</h2>
+        <div class="progress-bar-container">
+          <div id="progressBar" class="progress-bar"></div>
+        </div>
+        <p id="progressText">0% Complete</p>
+        <div id="completedTopicsList"></div>
+      </div>
+    </header>
+
+    <main id="mainContent">
+      <section id="topicSelection" class="topic-selection-grid">
+        <!-- Topics will be dynamically added here by JavaScript -->
+      </section>
+
+      <section id="lessonView" class="lesson-view hidden">
+        <button id="backToTopics" class="btn back-btn">« Back to Topics</button>
+        <h2 id="lessonTitle"></h2>
+        <div id="lessonContent"></div>
+        <div id="quizArea"></div>
+        <button id="markCompleteBtn" class="btn complete-btn hidden">Mark as Complete!</button>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2023 Learning App</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

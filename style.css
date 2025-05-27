@@ -1,0 +1,291 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f0f8ff;
+  /* AliceBlue */
+  color: #333;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 800px;
+}
+
+header h1 {
+  font-family: 'Comic Neue', cursive;
+  color: #ff6347;
+  /* Tomato */
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.progress-area {
+  background-color: #e6e6fa;
+  /* Lavender */
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.progress-area h2 {
+  margin-top: 0;
+  color: #483d8b;
+  /* DarkSlateBlue */
+}
+
+.progress-bar-container {
+  width: 100%;
+  background-color: #ddd;
+  border-radius: 25px;
+  margin: 10px 0;
+  height: 30px;
+  overflow: hidden;
+  /* Ensures inner bar corners are rounded */
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #4caf50;
+  /* Green */
+  border-radius: 25px;
+  text-align: center;
+  line-height: 30px;
+  color: white;
+  font-weight: bold;
+  transition: width 0.5s ease-in-out;
+}
+
+#progressText {
+  font-weight: bold;
+  color: #483d8b;
+}
+
+#completedTopicsList {
+  margin-top: 10px;
+  font-size: 0.9em;
+}
+
+.completed-topic-item {
+  display: inline-block;
+  margin: 2px 5px;
+  padding: 3px 8px;
+  background-color: #90ee90;
+  /* LightGreen */
+  border-radius: 5px;
+  font-size: 0.8em;
+}
+
+.completed-topic-item img {
+  width: 12px;
+  height: 12px;
+  vertical-align: middle;
+  margin-right: 3px;
+}
+
+
+.topic-selection-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.topic-card {
+  background-color: #add8e6;
+  /* LightBlue */
+  border: 2px solid #87ceeb;
+  /* SkyBlue */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.topic-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.topic-card.completed {
+  background-color: #90ee90;
+  /* LightGreen */
+  border-color: #3cb371;
+  /* MediumSeaGreen */
+}
+
+.topic-card.completed .topic-icon {
+  filter: grayscale(50%) opacity(70%);
+}
+
+
+.topic-card h3 {
+  font-family: 'Comic Neue', cursive;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #2a6279;
+}
+
+.topic-icon {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.lesson-view {
+  background-color: #fffacd;
+  /* LemonChiffon */
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px dashed #ffd700;
+  /* Gold */
+}
+
+.lesson-view h2 {
+  color: #ff8c00;
+  /* DarkOrange */
+  text-align: center;
+  font-family: 'Comic Neue', cursive;
+}
+
+#lessonContent p,
+#lessonContent li {
+  line-height: 1.6;
+  font-size: 1.1em;
+}
+
+#lessonContent ul {
+  list-style-type: '🌟 ';
+  /* Fun bullet point */
+  padding-left: 25px;
+}
+
+#lessonContent strong {
+  color: #d2691e;
+  /* Chocolate */
+}
+
+#quizArea {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f5f5dc;
+  /* Beige */
+  border-radius: 8px;
+}
+
+.quiz-question {
+  margin-bottom: 15px;
+}
+
+.quiz-question p {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.quiz-options label {
+  display: block;
+  margin-bottom: 5px;
+  padding: 8px;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.quiz-options label:hover {
+  background-color: #e0e0e0;
+}
+
+.quiz-options input[type="radio"] {
+  margin-right: 10px;
+}
+
+.feedback {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.feedback.correct {
+  background-color: #c8e6c9;
+  /* Light Green */
+  color: #2e7d32;
+  /* Dark Green */
+  border: 1px solid #a5d6a7;
+}
+
+.feedback.incorrect {
+  background-color: #ffcdd2;
+  /* Light Red */
+  color: #c62828;
+  /* Dark Red */
+  border: 1px solid #ef9a9a;
+}
+
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  font-family: 'Comic Neue', cursive;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 15px;
+}
+
+.back-btn {
+  background-color: #ffa07a;
+  /* LightSalmon */
+  color: white;
+  display: block;
+  /* Makes it take full width if needed, or set margin */
+  margin-bottom: 20px;
+}
+
+.back-btn:hover {
+  background-color: #f08080;
+  /* LightCoral */
+}
+
+.complete-btn {
+  background-color: #32cd32;
+  /* LimeGreen */
+  color: white;
+  display: block;
+  margin: 20px auto 0;
+  /* Center the button */
+}
+
+.complete-btn:hover {
+  background-color: #228b22;
+  /* ForestGreen */
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #777;
+}
