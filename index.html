@@ -14,6 +14,7 @@
   <div class="container">
     <header>
       <h1>Year 3 Learning Adventures!</h1>
+      <nav id="breadcrumbs" class="breadcrumbs-nav"></nav>
       <div class="progress-area">
         <h2>Your Progress:</h2>
         <div class="progress-bar-container">
@@ -25,12 +26,13 @@
     </header>
 
     <main id="mainContent">
-      <section id="topicSelection" class="topic-selection-grid">
-        <!-- Topics will be dynamically added here by JavaScript -->
+      <section id="itemView" class="item-view-grid">
+        <!-- Categories or Lessons will be dynamically added here -->
       </section>
 
       <section id="lessonView" class="lesson-view hidden">
-        <button id="backToTopics" class="btn back-btn">« Back to Topics</button>
+        <!-- Back button moved inside lesson view for context -->
+        <button id="backToItemsBtn" class="btn back-btn">« Back</button>
         <h2 id="lessonTitle"></h2>
         <div id="lessonContent"></div>
         <div id="quizArea"></div>
@@ -39,7 +41,7 @@
     </main>
 
     <footer>
-      <p>© 2023 Learning App</p>
+      <p>© 2025 Learning App</p>
     </footer>
   </div>
 

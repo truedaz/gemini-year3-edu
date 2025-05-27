@@ -289,3 +289,150 @@ footer {
   font-size: 0.9em;
   color: #777;
 }
+
+.breadcrumbs-nav {
+  text-align: center;
+  margin-bottom: 15px;
+  font-size: 1em;
+  color: #555;
+}
+
+.breadcrumbs-nav a {
+  color: #ff6347;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.breadcrumbs-nav a:hover {
+  text-decoration: underline;
+}
+
+.breadcrumbs-nav span {
+  margin: 0 5px;
+}
+
+.item-view-grid {
+  /* Renamed from topic-selection-grid */
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  /* Slightly wider cards */
+  gap: 20px;
+}
+
+.item-card {
+  /* Renamed from topic-card */
+  background-color: #add8e6;
+  /* LightBlue */
+  border: 2px solid #87ceeb;
+  /* SkyBlue */
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  /* Helps with content alignment */
+  min-height: 180px;
+  /* Ensure cards have some height */
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.item-card.category-card {
+  /* Style for category cards */
+  background-color: #fff3e0;
+  /* Light orange */
+  border-color: #ffcc80;
+  /* Orange */
+}
+
+.item-card.category-card .item-icon {
+  width: 80px;
+  /* Larger icons for categories */
+  height: 80px;
+}
+
+
+.item-card.completed-item {
+  /* For completed lessons */
+  background-color: #c8e6c9;
+  /* LightGreen for lessons */
+  border-color: #a5d6a7;
+}
+
+.item-card.completed-category {
+  /* For categories where all children are done */
+  background-color: #a3d3a3;
+  /* Darker green for categories */
+  border-color: #7bb27b;
+}
+
+
+.item-card.completed-item .item-icon,
+.item-card.completed-category .item-icon {
+  filter: grayscale(30%) opacity(80%);
+}
+
+.item-card h3 {
+  font-family: 'Comic Neue', cursive;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #2a6279;
+  font-size: 1.3em;
+}
+
+.category-card h3 {
+  color: #bf360c;
+  /* Darker orange for category titles */
+}
+
+.item-icon {
+  /* Renamed from topic-icon */
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
+  object-fit: contain;
+}
+
+.item-card .completion-status {
+  font-size: 0.8em;
+  font-style: italic;
+  color: #387002;
+  margin-top: auto;
+  /* Pushes status to bottom */
+}
+
+
+/* Quiz feedback improvements */
+.quiz-options label.selected-correct {
+  background-color: #c8e6c9 !important;
+  /* Light Green */
+  border: 2px solid #4caf50;
+}
+
+.quiz-options label.selected-incorrect {
+  background-color: #ffcdd2 !important;
+  /* Light Red */
+  border: 2px solid #f44336;
+}
+
+
+/* ... (Rest of your existing styles, ensure .btn .back-btn are still relevant) ... */
+#backToItemsBtn {
+  /* Ensure this exists if you renamed from backToTopicsBtn */
+  background-color: #ffa07a;
+  /* LightSalmon */
+  color: white;
+  margin-bottom: 20px;
+}
+
+#backToItemsBtn:hover {
+  background-color: #f08080;
+  /* LightCoral */
+}
