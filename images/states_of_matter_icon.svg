@@ -1,0 +1,16 @@
+<svg width="100px" height="100px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Solid -->
+  <rect x="10" y="15" width="25" height="25" fill="#3498db" rx="2"/>
+  <circle cx="15" cy="20" r="2" fill="white"/><circle cx="22" cy="20" r="2" fill="white"/><circle cx="29" cy="20" r="2" fill="white"/>
+  <circle cx="15" cy="27" r="2" fill="white"/><circle cx="22" cy="27" r="2" fill="white"/><circle cx="29" cy="27" r="2" fill="white"/>
+  <circle cx="15" cy="34" r="2" fill="white"/><circle cx="22" cy="34" r="2" fill="white"/><circle cx="29" cy="34" r="2" fill="white"/>
+  <!-- Liquid -->
+  <path d="M40 15 Q50 10 60 15 V 40 H 40 Z" fill="#2ecc71" />
+  <circle cx="45" cy="25" r="2.5" fill="white"/><circle cx="55" cy="22" r="2.5" fill="white"/>
+  <circle cx="48" cy="33" r="2.5" fill="white"/><circle cx="52" cy="30" r="2.5" fill="white"/>
+  <!-- Gas -->
+  <rect x="70" y="15" width="25" height="25" fill="#f1c40f" rx="12.5"/>
+  <circle cx="76" cy="22" r="3" fill="white"/><circle cx="88" cy="20" r="3" fill="white"/>
+  <circle cx="82" cy="33" r="3" fill="white"/><circle cx="75" cy="35" r="3" fill="white"/>
+  <text x="50" y="70" font-family="Arial, sans-serif" font-size="10" fill="#7f8c8d" text-anchor="middle">Solid Liquid Gas</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg width="100px" height="100px" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <path d="M30 80 V 40 A 20 20 0 0 1 70 40 V 80 H 60 V 40 A 10 10 0 0 0 40 40 V 80 Z" fill="#e74c3c"/> <!-- Red part -->
+  <rect x="30" y="80" width="10" height="10" fill="#bdc3c7"/> <!-- Silver end -->
+  <rect x="60" y="80" width="10" height="10" fill="#bdc3c7"/> <!-- Silver end -->
+  <text x="35" y="30" font-family="Arial, sans-serif" font-size="15" fill="white" text-anchor="middle">N</text>
+  <text x="65" y="30" font-family="Arial, sans-serif" font-size="15" fill="white" text-anchor="middle">S</text>
+</svg>
